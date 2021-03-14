@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Quicksand:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap');
+@font-face {
+  font-family: 'Marvin Visions Variable';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/MarvinVisionsTrial-Variable.ttf");
+}
+
+.whole {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+
 body {
   background-color: #092532;
 }
 
-
-.lay1 {
-    background-color: #f6efa6 ;
-    padding: 15px 15px;
-    text-align: center;
-}
+/* Navbar */
 
 .navbar {
-    background-color: #333;
     overflow: hidden;
   }
 
@@ -25,9 +34,45 @@ body {
   }
 
   
-.navbar a:hover {
+.navbar .nav-link:hover {
     color: yellow;
   }
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-family: 'Marvin Visions Variable';
+  letter-spacing: 5px;
+  --weight: 1;
+}
+
+.navbar .navbar-brand > * {
+  color: grey;
+  font-variation-settings: 'wght' var(--weight);
+}
+
+.navbar .navbar-nav {
+  margin-left: auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* About */
+
+.about {
+  background-color: lightyellow;
+}
+
+.about #about-section {
+  text-align: center;
+  color: black;
+  font-family: 'Abril Fatface', cursive;
+  padding: 20px 0px;
+  text-decoration: underline;
+}
+
+.about .about-para{
+  text-align: left;
+  padding: 0px 20px 20px 20px;
+}
 
   @media only screen and (max-width:800px) {
     /* For tablets: */
@@ -43,4 +88,4 @@ body {
     /* For mobile phones: */
     .menu, .main, .right {
       width: 100%;
-    }
+    }}
