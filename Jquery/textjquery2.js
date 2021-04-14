@@ -1,12 +1,13 @@
 const load = document.querySelector('.sk-folding-cube');
 const whole = document.querySelector('.whole');
+const footer = document.querySelector('.footer');
 
 function init(){
     setTimeout(() => {
         load.style.opacity = 0;
         load.style.display = 'none';
 
-        whole.style.display = 'inline';
+        window.location = 'main.html';
         setTimeout(() => (main.style.opacity = 1), 50);
     }, 4000);
 }
